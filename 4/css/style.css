@@ -1,0 +1,374 @@
+
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box; 
+}
+
+*:before,
+*:after { box-sizing: inherit; }
+
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'HelveticaNeueW01-77BdCnObl';
+    src: url('fonts/HelveticaNeueW01-77BdCnObl.woff2') format('woff2'),
+        url('fonts/HelveticaNeueW01-77BdCnObl.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueLight.woff2') format('woff2'),
+        url('HelveticaNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+        url('fonts/HelveticaNeueLTStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueW01-66MediumIt';
+    src: url('fonts/HelveticaNeueW01-66MediumIt.woff2') format('woff2'),
+        url('fonts/HelveticaNeueW01-66MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueW01-77BdCnObl';
+    src: url('fonts/HelveticaNeueW01-77BdCnObl.woff2') format('woff2'),
+        url('fonts/HelveticaNeueW01-77BdCnObl.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueW01-66MediumIt';
+    src: url('fonts/HelveticaNeueW01-66MediumIt.woff2') format('woff2'),
+        url('fonts/HelveticaNeueW01-66MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	background-color: #ffffff;
+	color: #737373;
+	font-size: 15px;
+	line-height: 1.6;
+	font-family: 'Helvetica Neue LT Std', sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 1.6;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 1.6;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 1.6;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.6;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.6;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 300;
+}
+
+h6 {
+	font-size: 15px;
+	line-height: 1.6;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: 500;
+}
+
+a {
+	color: inherit;
+}
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell {
+	max-width: 888px;
+	padding: 0 15px;
+	margin:  0 auto;
+}
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	padding: 22px 0 19px;
+	-webkit-box-shadow: -5px 24px 14px -28px rgba(115,115,115,0.87);
+	-moz-box-shadow: -5px 24px 14px -28px rgba(115,115,115,0.87);
+	box-shadow: -5px 24px 14px -28px rgba(115,115,115,0.87);
+}
+
+.header__inner {
+	display: flex;
+	font-size: 13px;
+	line-height: 1.53;
+	letter-spacing: 0.019em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header__content {
+	padding-top: 9px;
+}
+
+.header__content .blue {
+	color: #0099cc;
+}
+
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	margin: 0 18px 0 -18px;
+	padding-right: 22px;
+	position: relative;
+}
+
+.logo:after {
+	display: inline-block;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #cecece;
+	position: absolute;
+	bottom: 35%;
+	right: 0;
+}
+
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+	padding: 31px 0 0 ;
+	text-transform: capitalize;
+}
+
+.form .form__head {
+	margin: 0 0 33px;
+	letter-spacing: -0.01em;
+	margin-left: -1px;
+}
+
+.form .form__section {
+	padding-bottom: 71px;
+}
+
+.form .form__section-head {
+	padding: 0 0 18px;
+	border-bottom: 1px solid rgba(210, 210, 210, 0.8);
+	margin-bottom: 40px;
+}
+
+.form__section-info {
+	text-transform: none;
+	padding-bottom: 60px;
+	margin-top: -12px;
+}
+.form .form__section-body {
+	margin-left: 32px;
+	max-width: 620px;
+}
+
+.form .form__hint {
+	font-size: 13px;
+	line-height: 1.2;
+}
+
+.form .form__row ~ .form__row {
+	margin-top: 21px;
+}
+
+.form .form__cols {
+	display: flex; 
+	margin: 0 -6px;
+}
+
+.form .form__col {
+	padding: 0 6px; 
+}
+
+.form .form__col--1of2 {
+	flex: 0 0 50%
+}
+
+.form .form__col--1of3 {
+	flex: 0 0 33.333%
+}
+
+.form .form__col--2of3 {
+	flex: 0 0 66.666%;
+}
+
+.form .form__col--full {
+	flex: 0 0 100%;
+}
+
+.form .form__col--1 {
+	flex: 0 0 30%;
+}
+
+.form .form__col--2 {
+	flex: 0 0 70%;
+}
+
+.form .form__col--3 {
+	flex: 0 0 56.4%;
+}
+
+.form .form__col--4 {
+	flex: 0 0 75.5%;
+}
+
+.form__label {
+	 font-size: 15px;
+	 text-align: right;
+	 padding-top: 10px;
+	 display: block;
+	 margin: 0 38px 0 -25px;
+}
+
+.form__label--hidden {
+	display: none;
+}
+
+.form .form__label--hidden {
+	display: none; 
+}
+
+
+.form .form__section--adjust {
+	padding-bottom: 89px;
+}
+
+/* ------------------------------------------------------------ *\
+	Field
+\* ------------------------------------------------------------ */
+
+.field {
+	height: 43px;
+    border-radius: 5px;
+    padding: 0 15px;
+    border: 1px solid rgba(210, 210, 210, 0.8) ;
+    font-size: 15px;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.field::placeholder {
+	color: #cecece;
+}
+
+.field--textarea {
+	height: 100px;
+	resize: none;
+	vertical-align: top;
+}
+
+/* ------------------------------------------------------------ *\
+	Select
+\* ------------------------------------------------------------ */
+
+.select {
+	position: relative;
+}
+
+.select:after {
+	display: inline-block;
+	content: '';
+	border: 4px;
+	border-style: solid;
+	border-color: #cecece transparent transparent transparent;
+	position: absolute;
+	top: 52%;
+	right: 4.3%;
+}
+
+.select:before {
+	display: inline-block;
+	content: '';
+	border: 4px;
+	border-style: solid;
+	border-color:  transparent transparent #cecece transparent;
+	position: absolute;
+	top: 26%;
+	right: 4.3%;
+}
+
+
+.select select {
+	height: 43px;
+    border-radius: 5px;
+    padding: 0 15px;
+    border: 1px solid rgba(210, 210, 210, 0.8) ;
+    font-size: 15px;
+    line-height: 1.2;
+    width: 100%;
+    -webkit-appearance: none;
+  	-moz-appearance: none;
+ 	 appearance: none;
+}
+
+.select select:invalid {
+	color: #cecece;
+}
+
+.select select option {
+	color: #000
+}
+
+
