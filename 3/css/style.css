@@ -1,0 +1,503 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box; 
+}
+
+*:before,
+*:after { box-sizing: inherit; }
+
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('fonts/Butler.woff2') format('woff2'),
+        url('fonts/Butler.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('fonts/FuturaBT-Heavy.woff2') format('woff2'),
+        url('fonts/FuturaBT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	font-size: 24px;
+	line-height: 1.62;
+	color: #000000;
+	background-color: #fff;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 1.33;
+	font-family: 'Butler', sans-serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 45px;
+	line-height: 1.2;
+	font-family: 'Butler', sans-serif;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 35px;
+	line-height: 1.2;
+	font-family: 'Butler' sans-serif;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.2;
+	font-family: 'Butler' sans-serif;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: 'Futura Hv BT', sans-serif;
+	font-weight: 900 ;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 1.2;
+	font-family: 'Butler' sans-serif;
+	font-weight: 400;
+}
+
+a {
+	color: inherit;
+}
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+	
+.shell {
+	max-width: 1153px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	padding: 42px 0;
+	z-index: 10;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ------------------------------------------------------------ *\
+	logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	width: 282px;
+	height: 42px;
+	margin-left: -34px;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav {
+	font-family: 'Futura Hv BT', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	margin: 8px 0 0 ;
+}
+
+.nav ul {
+	display: flex;
+}
+
+.nav li {
+	list-style-type: none;
+}
+
+.nav li + li {
+	margin-left: 41px;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+	position: relative;
+	min-height: 658px;
+}
+
+.hero__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero__inner {
+	position: relative;
+	height: 658px;
+}
+
+.hero__image-box {
+	position: absolute;
+	width: 325px;
+	height: 212px;
+	top: 50%;
+	left: 64.5%;
+	transform: translateY(-50%);
+}
+
+.hero__image-box img {
+	width: 100%;
+	height: 100%;
+}
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	text-align: center;
+	padding: 144px 0 
+}
+
+.section__content {
+	max-width: 934px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ *\
+	Action
+\* ------------------------------------------------------------ */
+
+.action {
+	padding: 13px 0 88px;
+}
+
+.action__inner {
+	max-width: 1127px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ *\
+	Layout
+\* ------------------------------------------------------------ */
+
+.layout {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 152px 128px;
+}
+
+/* ------------------------------------------------------------ *\
+	box
+\* ------------------------------------------------------------ */
+
+.box .box__content {
+	font-family: 'Butler', sans-serif;
+	font-size: 24px;
+	line-height: 1.62;
+	max-width: 500px;
+}
+
+.box h5 {
+	text-transform: uppercase;
+	margin-bottom: 32px;
+	letter-spacing: 0.116em;
+}
+
+.box--center {
+	align-self: center;
+}
+
+/* ------------------------------------------------------------ *\
+	Box-image
+\* ------------------------------------------------------------ */
+
+.box-image .box-image__figure {
+	position: relative;
+	padding: 130% 0 0;
+}
+
+.box-image .box-image__figure img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box-image--flex .box-image__figure {
+ 	padding: 50%;
+}
+
+/* ------------------------------------------------------------ *\
+	Section-feed
+\* ------------------------------------------------------------ */
+
+.section-feed {
+	padding: 100px 0; 
+}
+
+.section-feed__inner {
+	padding: 0 34px 0 4px
+}
+
+.section-feed__head {
+	max-width: 880px;
+	margin: 0 auto 138px;
+	text-align: center;
+}
+
+.section-feed__head .follow {
+	text-decoration: none;
+	position: relative;
+}
+
+.section-feed__head .follow:after {
+	display: inline-block;
+	content: '';
+	width: 280px;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+}
+
+/* ------------------------------------------------------------ *\
+	list-feed
+\* ------------------------------------------------------------ */
+
+.list-feed {
+	list-style-type: none;
+	display: flex;
+}
+
+.list-feed li {
+	flex: 0 0 calc(100% / 3);
+}
+
+.list-feed li + li {
+	margin-left: 15px;
+}
+
+/* ------------------------------------------------------------ *\
+	Feed-box
+\* ------------------------------------------------------------ */
+
+.feed-box__figure {
+	position: relative;
+	padding: 100% 0 0;
+}
+
+.feed-box__figure img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+	max-width: 1154px;
+	margin: 0 auto;
+	padding: 46px 49px 99px;
+}
+
+.form .form__head {
+	max-width: 880px;
+	margin: 0 auto 160px;
+	text-align: center;
+	color: #393939;
+	letter-spacing: -0.01em;
+	padding-left: 2px;
+}
+
+.form .form__head h1 {
+	line-height: 1.2;
+}
+
+.form .form__row + .form__row {
+	margin-top: 78px;
+}
+
+.form .form__label {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	display: block;
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: 'Futura Hv BT', sans-serif;
+	font-weight: 900 ;
+}
+
+.form .form__body {
+	margin-bottom: 24px;
+}
+
+.form__btn {
+	min-width: 375px;
+	padding: 21px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Futura Hv BT', sans-serif;
+	letter-spacing: 0.102em;
+}
+
+/* ------------------------------------------------------------ *\
+	Field
+\* ------------------------------------------------------------ */
+
+.field {
+	width: 100%;
+	padding: 0 18px 0;
+	border: 2px solid #d4d5d6;
+	font-size: 24px;
+	height: 69px;
+	letter-spacing: -0.065em;
+}
+
+.field--textarea {
+	height: 233px;
+	padding: 18px;
+}
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	padding: 48px 0;
+}
+
+.footer__inner {
+	padding: 0 35px 43px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__social {
+	margin-right: 36px;
+}
+
+.footer__social-title {
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	display: block;
+	max-width: 268px;
+	margin-bottom: 25px;
+	padding-left: 8px;
+	letter-spacing: 0.07em;
+}
+
+.footer__social-title h5 {
+	line-height: 1.5;
+}
+
+.footer__social-icons {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+.footer__social-icons li {
+	width: 53px;
+	text-align: center;
+}
+
+.footer__social-icons li + li {
+	margin-left: 11px;
+}
+
+.footer__logo {
+	padding: 17px 0 0;
+}
+
+.footer__address {
+	max-width: 304px;
+    letter-spacing: 0.022em;
+    padding-top: 25px;
+}
+
+.footer__address h4 {
+	line-height: 1.62;
+	margin-left: -1px;
+}
+
+.footer__bar {
+	 font-family: 'Futura Hv BT';
+	 font-size: 18px;
+	 line-height: 1.2;
+	 margin: 0 auto;
+	 text-align: center;
+	 letter-spacing: -0.093em;
+}
